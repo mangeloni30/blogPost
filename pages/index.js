@@ -4,7 +4,6 @@ import Image from "next/image";
 
 export default function Home() {
   const { user } = useUser();
-  console.log("user --> ", user);
   return <div>
     <h1>This is the homepage</h1>
     <div>
@@ -16,7 +15,7 @@ export default function Home() {
             height={50}
             width={50}
           />
-          <Link href="/api/auth/logout">Login</Link>
+          <Link href="/api/auth/logout">logout</Link>
         </>
       ) : (
         <Link href="/api/auth/login">Login</Link>
